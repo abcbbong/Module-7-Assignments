@@ -1,0 +1,33 @@
+# Python 기본 무시 (캐시, 가상 환경 등)
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+.pytest_cache/
+*.swp
+*.bak
+*.class
+
+# 가상 환경 무시
+venv/
+.venv/
+env/
+.env/
+
+# 큰 다운로드 파일 무시 (GloVe 관련)
+glove.6B/
+glove.6B.zip
+*.zip  # 모든 ZIP 파일 무시 (선택)
+*.txt  # 큰 TXT 파일 무시 (GloVe 파일처럼, 필요 시 주석 해제)
+
+# 기타 큰 파일/데이터셋 무시
+data/  # 데이터 폴더가 있으면
+downloads/  # 다운로드 폴더
+
+# Jupyter 노트북 체크포인트 무시
+.ipynb_checkpoints/
+
+# OS 관련 무시
+.DS_Store  # Mac
+Thumbs.db  # Windows
